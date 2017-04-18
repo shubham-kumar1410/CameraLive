@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.shubhamk.cameralive.MainActivity"
+    tools:context="com.shubhamk.cameralive.CameraActivity"
     tools:showIn="@layout/activity_main">
 
     <TextureView
@@ -23,21 +23,10 @@
        android:textColor="@android:color/white"
         android:text="Video"
         android:textSize="20dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="33dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="49dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/camera"
-        android:text="Photo"
-        android:textSize="20dp"
-        android:textColor="@android:color/white"
-        android:layout_alignTop="@+id/video"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="57dp" />
+        />
 
     <Chronometer
         android:layout_width="wrap_content"
@@ -48,4 +37,15 @@
         android:textSize="25dp"
         android:layout_above="@+id/video"
         android:layout_alignStart="@+id/video" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera"
+        android:text="SignOut"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
 </RelativeLayout>
